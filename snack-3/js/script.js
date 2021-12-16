@@ -1,11 +1,14 @@
 
 let potenzaDi = 2;
 
-let currentNumber;
+let currentNumber = 2;
 
-do {
-    currentNumber = Math.pow(potenzaDi, 3);
-    console.log(currentNumber);
-    potenzaDi += 2;
 
-} while (currentNumber <= 1000 ) 
+ 
+while (Math.pow(2, potenzaDi) < 1000 ) {
+
+currentNumber = Math.pow(2, potenzaDi);
+console.log(currentNumber);
+potenzaDi += 1;
+
+}
